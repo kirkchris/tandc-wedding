@@ -1,0 +1,5 @@
+body {
+  background: url(../images/knot-bg.png) top left no-repeat,
+              url(../images/knot-bottom.png) bottom left no-repeat;
+  background-size: 100%;
+}
