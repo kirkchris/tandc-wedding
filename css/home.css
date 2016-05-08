@@ -1,5 +1,209 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'BloomingElegantSans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 60px;
+  font-family: 'BloomingElegant';
+}
+
+h4 {
+  font-size: 24px;
+}
+
 body {
-  background: url(../images/knot-bg.png) top left no-repeat,
-              url(../images/knot-bottom.png) bottom left no-repeat;
+  background: url(../images/knot-bg.png) top left no-repeat;
   background-size: 100%;
 }
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+  color: #000;
+}
+
+div.page {
+  display: none;
+}
+
+footer, .push {
+  height: 155px; /* '.push' must be the same height as 'footer' */
+}
+
+#side-menu {
+  display: none;
+  width: 0px;
+  height: 250px;
+  top: 80px;
+  left: 0px;
+  color: #000;
+  font-family: 'BloomingElegantHand';
+}
+
+.menu {
+  position: absolute;
+}
+
+.menu-side {
+  left: -151px;
+}
+
+.menu-side.open {
+  border-right: 1px solid #7f6549;
+  /*border-bottom: 1px solid #7F6549;*/
+  background: #AC9570;
+  color: #fff;
+  padding: 50px 0 !important;
+}
+
+.menu.open #side-menu {
+  display: block;
+  width: 150px;
+  height: 250px;
+}
+
+.menu .menu-toggle {
+  color: #AC9570;
+}
+
+.menu.open .menu-toggle {
+  color: #fff;
+}
+
+#side-menu ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#side-menu ul li a {
+  color: #fff;
+  font-size: 32px;
+}
+
+.header-bar {
+  top: 0px;
+  margin-bottom: 40px;
+}
+
+.header-bar .menu {
+  float: left;
+  font-size: 20px;
+  padding: 50px 60px;
+  height: 100%;
+}
+
+.header-bar .logo {
+  height: 150px;
+}
+
+.header-bar .logo img {
+  margin-top: 25px;
+  height: 150px;
+}
+
+.navbar-default {
+  background-color: inherit;
+  border-color: inherit;
+}
+
+.navbar-default .navbar-brand {
+  height: 100px;
+  padding: 0;
+}
+
+.navbar-default .navbar-brand img {
+  width: 20%;
+}
+
+footer {
+  height: 100px;
+  background: url(../images/knot-bottom.png) bottom left no-repeat;
+  display: block;
+  background-size: 100%;
+}
+
+/* WEDDING PARTY PAGE */
+.wedding-party-person {
+  text-align: center;
+}
+
+.wedding-party-person img {
+  height: 150px;
+}
+
+.wedding-party-person .wp-img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'BloomingElegantHand';
+  src: url('../fonts/BloomingElegantHand.eot');
+  src: url('../fonts/BloomingElegantHand.woff2') format('woff2'),
+       url('../fonts/BloomingElegantHand.woff') format('woff'),
+       url('../fonts/BloomingElegantHand.ttf') format('truetype'),
+       url('../fonts/BloomingElegantHand.svg#BloomingElegantHand') format('svg'),
+       url('../fonts/BloomingElegantHand.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BloomingElegant';
+  src: url('../fonts/BloomingElegant.eot');
+  src: url('../fonts/BloomingElegant.woff2') format('woff2'),
+       url('../fonts/BloomingElegant.woff') format('woff'),
+       url('../fonts/BloomingElegant.ttf') format('truetype'),
+       url('../fonts/BloomingElegant.svg#BloomingElegant') format('svg'),
+       url('../fonts/BloomingElegant.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BloomingElegantSans';
+  src: url('../fonts/BloomingElegantSans.eot');
+  src: url('../fonts/BloomingElegantSans.woff2') format('woff2'),
+       url('../fonts/BloomingElegantSans.woff') format('woff'),
+       url('../fonts/BloomingElegantSans.ttf') format('truetype'),
+       url('../fonts/BloomingElegantSans.svg#BloomingElegantSans') format('svg'),
+       url('../fonts/BloomingElegantSans.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* MOBILE SCREENS */
+@media only screen and (max-device-width: 480px) {
+  .header-bar .logo img {
+    margin-top: 10px;
+    height: 80px;
+  }
+
+  .header-bar {
+    margin-bottom: 10px;
+  }
+
+  .header-bar .logo {
+    height: 80px;
+  }
+}
+
+
+
+/*
+border-right: 1px solid #7f6549;
+    background: #AC9570;
+    color: #fff;
+
+        border-top: 0;
+    border-right: 1px solid #7f6549;
+    border-bottom: 1px solid #7F6549;*/
+/*    background-color: #AC9570;
+*/
