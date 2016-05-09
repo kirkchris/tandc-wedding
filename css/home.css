@@ -52,6 +52,7 @@ footer, .push {
 
 .menu-side {
   left: -151px;
+  z-index: 1000;
 }
 
 .menu-side.open {
@@ -188,6 +189,10 @@ footer {
 
   .header-bar {
     margin-bottom: 10px;
+  }
+
+  .header-bar .menu {
+    padding: 50px 30px;
   }
 
   .header-bar .logo {
